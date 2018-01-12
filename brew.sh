@@ -93,5 +93,55 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# ==== Beginning of extra apps ===
+
+# productivity apps
+brew cask install spectacle
+brew cask install --appdir="/Applications" evernote # https://gist.github.com/t-io/8255711
+brew cask install google-chrome
+brew cask install slack
+brew cask install vlc
+brew cask install flux
+brew cask install lastpass
+brew cask install keepassx
+brew cask install qvod-player
+brew cask install anki
+brew cask install android-file-transfer
+brew cask install time-out
+brew cask install xmind
+
+# security
+brew cask install gas-mask
+brew cask install malwarebytes
+
+# dev
+brew install the_silver_searcher
+brew cask install psequel
+brew cask install iterm2
+brew cask install dash
+
+# may need to run this twice after allowing kernel extensions
+brew cask install --appdir="/Applications" virtualbox
+
+brew install emacs --with-cocoa
+brew linkapps emacs
+
+
+# other apps recommended but not used. Can be enabled with uncommenting
+# brew cask install alfred # don't like it
+# brew cask install --appdir="/Applications" wunderlist # NOT working
+# brew cask install electronic-wechat # not trusted its security
+# brew cask install cyberduck
+
+# other apps to install through App store
+# wunderlist
+
+# direct download
+# sougou wubi
+# MS-office
+# kuaibo
+
+# ==== ending of extra apps ===
+
 # Remove outdated versions from the cellar.
 brew cleanup
