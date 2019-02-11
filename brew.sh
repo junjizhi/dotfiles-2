@@ -119,6 +119,8 @@ brew install the_silver_searcher
 brew cask install psequel
 brew cask install iterm2
 brew cask install dash
+brew install shellcheck
+brew install keycastr
 
 # may need to run this twice after allowing kernel extensions
 brew cask install --appdir="/Applications" virtualbox
