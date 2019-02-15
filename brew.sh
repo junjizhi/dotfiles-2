@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euxof pipefail
 
 # Install command-line tools using Homebrew.
 
@@ -17,20 +18,14 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+# brew install gnu-sed --with-default-names
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
-brew install bash
-brew install bash-completion2
+# brew install bash
+# brew install bash-completion2
 
 brew install zsh
-
-# Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
-fi;
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -39,7 +34,7 @@ brew install wget --with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+# brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
@@ -52,30 +47,30 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+# brew install aircrack-ng
+# brew install bfg
+# brew install binutils
+# brew install binwalk
+# brew install cifer
+# brew install dex2jar
+# brew install dns2tcp
+# brew install fcrackzip
+# brew install foremost
+# brew install hashpump
+# brew install hydra
+# brew install john
+# brew install knock
+# brew install netpbm
+# brew install nmap
+# brew install pngcheck
+# brew install socat
+# brew install sqlmap
+# brew install tcpflow
+# brew install tcpreplay
+# brew install tcptrace
+# brew install ucspi-tcp # `tcpserver` etc.
+# brew install xpdf
+# brew install xz
 
 # Install other useful binaries.
 brew install ack
@@ -95,7 +90,12 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# dev
+brew install tmux
+brew install elixir
+
 # ==== Beginning of extra apps ===
+brew install shellcheck
 
 # productivity apps
 brew cask install spectacle
@@ -108,7 +108,7 @@ brew cask install lastpass
 brew cask install keepassx
 brew cask install qvod-player
 brew cask install anki
-brew cask install android-file-transfer
+# brew cask install android-file-transfer
 brew cask install time-out
 brew cask install xmind
 
@@ -121,15 +121,13 @@ brew install the_silver_searcher
 brew cask install psequel
 brew cask install iterm2
 brew cask install dash
-brew install shellcheck
-brew install keycastr
+brew cask install keycastr
 
 # may need to run this twice after allowing kernel extensions
 # brew cask install --appdir="/Applications" virtualbox
 
 brew cask install emacs
-brew linkapps emacs
-
+# brew linkapps emacs
 
 # other apps recommended but not used. Can be enabled with uncommenting
 # brew cask install alfred # don't like it
