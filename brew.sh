@@ -24,6 +24,8 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew install bash-completion2
 
+brew install zsh
+
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
@@ -41,7 +43,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+# brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -112,7 +114,7 @@ brew cask install xmind
 
 # security
 brew cask install gas-mask
-brew cask install malwarebytes
+# brew cask install malwarebytes
 
 # dev
 brew install the_silver_searcher
@@ -123,9 +125,9 @@ brew install shellcheck
 brew install keycastr
 
 # may need to run this twice after allowing kernel extensions
-brew cask install --appdir="/Applications" virtualbox
+# brew cask install --appdir="/Applications" virtualbox
 
-brew install emacs --with-cocoa
+brew cask install emacs
 brew linkapps emacs
 
 
