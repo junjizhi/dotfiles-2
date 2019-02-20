@@ -146,13 +146,14 @@ brew cask install emacs
 # brew cask install electronic-wechat # not trusted its security
 # brew cask install cyberduck
 
-# other apps to install through App store
+# other apps
 # wunderlist
 
 # direct download
 # sougou wubi
 # MS-office
-# kuaibo
+
+# brew cask install wechat
 
 # ==== ending of extra apps ===
 
