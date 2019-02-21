@@ -101,10 +101,6 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-# dev
-brew install tmux
-brew install elixir
-
 # ==== Beginning of extra apps ===
 brew install shellcheck
 
@@ -128,12 +124,16 @@ brew cask install gas-mask
 # brew cask install malwarebytes
 
 # dev
+brew install tmux
+brew install elixir
 brew install the_silver_searcher
+brew install postgresql
+
 brew cask install psequel
 brew cask install iterm2
 brew cask install dash
 brew cask install keycastr
-
+brew cask install tableplus
 # may need to run this twice after allowing kernel extensions
 # brew cask install --appdir="/Applications" virtualbox
 
