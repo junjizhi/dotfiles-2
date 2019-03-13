@@ -118,6 +118,7 @@ brew cask install anki
 # brew cask install android-file-transfer
 brew cask install time-out
 brew cask install xmind
+brew cask install microsoft-office
 
 # security
 brew cask install gas-mask
