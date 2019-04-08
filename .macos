@@ -814,6 +814,13 @@ defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 
 ###############################################################################
+# Notes.app                                                                  #
+###############################################################################
+
+defaults write -app Notes NSUserKeyEquivalents -dict-add "Bulleted List" -string "@$u"
+defaults write -app Notes NSUserKeyEquivalents -dict-add "Numbered List" -string "@$o"
+
+###############################################################################
 # Spectacle.app                                                               #
 ###############################################################################
 
