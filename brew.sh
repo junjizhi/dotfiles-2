@@ -38,8 +38,7 @@ if [ ! -d "$OH_MY_ZSH_DIR" ]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
-# Install `wget` with IRI support.
-# brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
