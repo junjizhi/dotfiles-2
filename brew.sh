@@ -110,6 +110,8 @@ brew cask install google-chrome
 brew cask install slack
 brew cask install vlc
 brew cask install flux
+brew cask install visual-studio-code
+
 # brew cask install lastpass
 brew cask install keepassx
 brew cask install qvod-player
