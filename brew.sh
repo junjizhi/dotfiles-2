@@ -110,7 +110,6 @@ brew cask install google-chrome
 brew cask install slack
 brew cask install vlc
 brew cask install flux
-brew cask install visual-studio-code
 
 # brew cask install lastpass
 brew cask install keepassx
@@ -126,6 +125,8 @@ brew cask install gas-mask
 # brew cask install malwarebytes
 
 # dev
+brew cask install visual-studio-code
+brew cask install altair-graphql-client
 brew install tmux
 brew install elixir
 brew install the_silver_searcher
@@ -136,6 +137,10 @@ brew cask install iterm2
 brew cask install dash
 brew cask install keycastr
 brew cask install tableplus
+brew cask install postman
+
+# brew tap heroku/brew && brew install heroku
+
 # may need to run this twice after allowing kernel extensions
 # brew cask install --appdir="/Applications" virtualbox
 
