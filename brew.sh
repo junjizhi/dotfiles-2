@@ -101,6 +101,13 @@ brew install markdown
 
 # ==== Beginning of extra apps ===
 brew install shellcheck
+brew install hub
+brew install speedtest-cli
+
+brew install tldr
+
+# Extend brew with cask
+brew install cask
 
 # productivity apps
 brew install --cask spectacle
@@ -119,26 +126,26 @@ brew install --cask microsoft-office
 # brew install --cask malwarebytes
 
 # dev
-brew cask install visual-studio-code
-brew cask install altair-graphql-client
+brew install --cask visual-studio-code
+brew install --cask altair-graphql-client
 brew install tmux
 brew install elixir
 brew install the_silver_searcher
 brew install postgresql
 
-brew cask install psequel
-brew cask install iterm2
-brew cask install dash
-brew cask install keycastr
-brew cask install tableplus
-brew cask install postman
+brew install --cask psequel
+brew install --cask iterm2
+# brew install --cask dash
+brew install --cask keycastr
+brew install --cask tableplus
+brew install --cask postman
 
 # brew tap heroku/brew && brew install heroku
 
 # may need to run this twice after allowing kernel extensions
-# brew cask install --appdir="/Applications" virtualbox
+# brew install --cask --appdir="/Applications" virtualbox
 
-brew cask install emacs
+brew install --cask emacs
 # brew linkapps emacs
 
 # other apps recommended but not used. Can be enabled with uncommenting
@@ -154,7 +161,7 @@ brew cask install emacs
 # sougou wubi
 # MS-office
 
-# brew cask install wechat
+# brew install --cask wechat
 
 # ==== ending of extra apps ===
 
