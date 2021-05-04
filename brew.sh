@@ -28,14 +28,6 @@ brew install findutils
 # brew install bash
 # brew install bash-completion2
 
-# simple logic to check if oh my zsh is installed
-OH_MY_ZSH_DIR=$HOME/.oh-my-zsh
-if [ ! -d "$OH_MY_ZSH_DIR" ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  # zsh auto suggestions plugin
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-fi
-
 brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
@@ -53,6 +45,9 @@ brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
+
+# Install dock tools
+brew install dockutil
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
@@ -85,7 +80,7 @@ brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+# brew install imagemagick --with-webp
 # brew install lua
 # brew install lynx
 # brew install p7zip
@@ -121,7 +116,7 @@ brew install --cask xmind
 brew install --cask anki
 # security
 brew install --cask gas-mask
-brew install --cask microsoft-office
+# brew install --cask microsoft-office
 
 # brew install --cask malwarebytes
 
@@ -131,22 +126,21 @@ brew install --cask altair-graphql-client
 brew install tmux
 brew install elixir
 brew install the_silver_searcher
-brew install postgresql
+# brew install postgresql
 
-brew install --cask psequel
+# brew install --cask psequel
 brew install --cask iterm2
 # brew install --cask dash
 brew install --cask keycastr
 brew install --cask tableplus
 brew install --cask postman
+brew install --cask google-chrome
 
 # brew tap heroku/brew && brew install heroku
 
 # may need to run this twice after allowing kernel extensions
 # brew install --cask --appdir="/Applications" virtualbox
 
-brew install --cask emacs
-# brew linkapps emacs
 
 # other apps recommended but not used. Can be enabled with uncommenting
 # brew install --cask alfred # don't like it
@@ -159,9 +153,6 @@ brew install --cask emacs
 
 # direct download
 # sougou wubi
-# MS-office
-
-# brew install --cask wechat
 
 # ==== ending of extra apps ===
 
