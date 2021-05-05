@@ -2,17 +2,21 @@
 set -euxo pipefail
 
 # install Homebrew
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
 # simple logic to check if oh my zsh is installed
 OH_MY_ZSH_DIR=$HOME/.oh-my-zsh
 if [ ! -d "$OH_MY_ZSH_DIR" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  # zsh auto suggestions plugin
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
+# zsh auto suggestions plugin
+ZSH_AUTO_SUGGESTION_PATH=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+if [ ! -d "$ZSH_AUTO_SUGGESTION_PATH" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_AUTO_SUGGESTION_PATH"
+fi
 
 # Clone my own emacs
 git clone git@github.com:junjizhi/my-spacemacs.git ~/.emacs.d 
