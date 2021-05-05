@@ -22,11 +22,6 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 # brew install gnu-sed --with-default-names
-# Install Bash 4.
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
-# running `chsh`.
-# brew install bash
-# brew install bash-completion2
 
 brew install wget
 
@@ -36,18 +31,15 @@ brew install gnupg
 # Install more recent versions of some macOS tools.
 # brew install vim --with-override-system-vi
 brew install grep
-brew install openssh
-brew install screen
+# brew install openssh
+# brew install screen
 # brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-
-# Install dock tools
-brew install dockutil
+# brew tap bramstein/webfonttools
+# brew install sfnt2woff
+# brew install sfnt2woff-zopfli
+# brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
@@ -78,8 +70,8 @@ brew install dockutil
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
-brew install git
-brew install git-lfs
+# brew install git
+# brew install git-lfs
 # brew install imagemagick --with-webp
 # brew install lua
 # brew install lynx
@@ -88,25 +80,28 @@ brew install git-lfs
 # brew install pv
 # brew install rename
 # brew install rlwrap
-brew install ssh-copy-id
-brew install tree
+# brew install ssh-copy-id
+# brew install tree
 # brew install vbindiff
 # brew install zopfli
 brew install markdown
 
 # ==== Beginning of extra apps ===
-brew install shellcheck
-brew install hub
-brew install speedtest-cli
+# Install dock tools
+# brew install dockutil
 
-brew install tldr
+# brew install shellcheck
+brew install hub
+# brew install speedtest-cli
+
+# brew install tldr
 
 # Extend brew with cask
 brew install cask
 
 # productivity apps
 brew install --cask spectacle
-brew install --cask vlc
+# brew install --cask vlc
 # brew install --cask flux
 # brew install --cask lastpass
 brew install --cask keepassx
@@ -116,43 +111,28 @@ brew install --cask xmind
 brew install --cask anki
 # security
 brew install --cask gas-mask
-# brew install --cask microsoft-office
-
 # brew install --cask malwarebytes
 
 # dev
 brew install --cask visual-studio-code
 brew install --cask altair-graphql-client
-brew install tmux
 brew install elixir
 brew install the_silver_searcher
-# brew install postgresql
 
-# brew install --cask psequel
 brew install --cask iterm2
-# brew install --cask dash
-brew install --cask keycastr
+# brew install --cask keycastr
 brew install --cask tableplus
 brew install --cask postman
 brew install --cask google-chrome
+brew install --cask skitch
 
 # brew tap heroku/brew && brew install heroku
 
 # may need to run this twice after allowing kernel extensions
 # brew install --cask --appdir="/Applications" virtualbox
 
-
-# other apps recommended but not used. Can be enabled with uncommenting
-# brew install --cask alfred # don't like it
-# brew install --cask --appdir="/Applications" wunderlist # NOT working
-# brew install --cask electronic-wechat # not trusted its security
+# brew install --cask microsoft-office
 # brew install --cask cyberduck
-
-# other apps
-# wunderlist
-
-# direct download
-# sougou wubi
 
 # ==== ending of extra apps ===
 
