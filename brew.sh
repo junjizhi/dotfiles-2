@@ -125,6 +125,7 @@ brew install --cask tableplus
 brew install --cask postman
 brew install --cask google-chrome
 brew install --cask skitch
+brew install --cask gifox
 
 # brew tap heroku/brew && brew install heroku
 
